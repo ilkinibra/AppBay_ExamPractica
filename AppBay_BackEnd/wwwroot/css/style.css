@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.logo-icon{
+    font-size: 2rem;
+    border:1px solid ;
+    padding: 1.6rem 2rem;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+}
+#header-stick{
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background-color: #F8F9FA;
+}
+.app{
+    font-size: 2rem;
+    font-weight: 700;
+    color: blue;
+}
+.bay{
+    font-size: 2rem;
+    font-weight: 700;
+    color: gray;
+}
+.nav-main-list{
+    display: flex;
+    justify-content: end;
+}
+.nav-item{
+    margin-top: 4rem;
+    font-size: 1.5rem;
+}
+
+.slider-img{
+    position: relative;
+}
+.slider-mobile{
+    position: absolute;
+}
+/*.slider-text{
+    position: absolute;
+
+}
+.slider-icon{
+    font-size: 4rem;
+    color: white;
+}
+.app-download{
+    background-color: green;
+}
+.available{
+    font-size: small;
+    color: white;
+}
+.appstore{
+    font-size: medium;
+    color: white;
+} */
+
+.responsive-icon{
+    border: 5px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5rem;
+    padding: 3rem 2.5rem;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+.card-area{
+    border: none;
+}
+.responsive-icon:hover{
+    background-color: white;
+    color: blue;
+}
+
+
+.modern-title{
+    font-size:3rem;
+    color: blue;
+}
+.modern-subtitle{
+    font-size: 1.5rem;
+    color: black;
+}
+.gear-icon{
+    border:1px solid blue;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 1rem 1.2rem;
+    margin-top:1.5rem ;
+}
+.modern-card{
+    border: none;
+    padding-top: 2rem;
+    margin-top: 3rem;
+}
+
+
+
+#slider, ul
+{
+	height: 200px;
+}
+
+#slider
+{
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+	margin-top: 50px;
+	position: relative;
+	width: 600px;
+}
+
+#slider li
+{
+	float: left;
+	position: relative;
+	width: 600px;
+	display: inline-block;
+	height: 200px;
+}
+
+#slider ul
+{
+	list-style: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 9000px;
+	transition: left .2s linear;
+	-moz-transition: left .2s linear;
+	-o-transition: left .2s linear;
+	-webkit-transition: left .2s linear;
+	margin-left: -25px;
+  font-family: open sans;
+  color: #666;
+}
+
+/*** Content ***/
+
+.slider-container
+{
+  color:#000;
+	margin: 0 auto;
+	padding: 0;
+	width: 600px;
+  min-height: 180px;
+  text-align:center;
+}
+
+.slider-container h2
+{
+ 	color: #fff;
+}
+
+.slider-container  p
+{
+	margin: 5px 25px;
+	font-weight: semi-bold;
+	line-height: 200%;
+    font-size: 1.5rem;
+}
+
+/*** target hooks ****/
+
+@-webkit-keyframes slide-animation {
+	0% {opacity:0;}
+	2% {opacity:1;}
+	20% {left:0px; opacity:1;}
+	22.5% {opacity:0.6;}
+	25% {left:-600px; opacity:1;}
+	45% {left:-600px; opacity:1;}
+	47.5% {opacity:0.6;}
+	50% {left:-1200px; opacity:1;}
+	70% {left:-1200px; opacity:1;}
+	72.5% {opacity:0.6;}
+	75% {left:-1800px; opacity:1;}
+	95% {opacity:1;}
+	98% {left:-1800px; opacity:0;} 
+	100% {left:0px; opacity:0;}
+}
+.textslider-text
+{
+    margin-top: 3rem;
+    font-size: 4rem;
+}
+#slider ul
+{
+	-webkit-animation: slide-animation 20s infinite;
+}
+
+#slider ul:hover
+{
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+
+
+.footer-basic {
+    margin-top: 2rem;
+    padding:40px 0;
+    background-color:black;
+    color:white;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+    background-color: white;
+    color: black;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
